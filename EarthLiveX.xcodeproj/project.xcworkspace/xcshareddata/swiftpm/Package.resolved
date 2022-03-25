@@ -1,0 +1,61 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "LaunchAtLogin",
+        "repositoryURL": "https://github.com/sindresorhus/LaunchAtLogin",
+        "state": {
+          "branch": null,
+          "revision": "e8171b3e38a2816f579f58f3dac1522aa39efe41",
+          "version": "4.2.0"
+        }
+      },
+      {
+        "package": "Wallpaper",
+        "repositoryURL": "https://github.com/sindresorhus/macos-wallpaper",
+        "state": {
+          "branch": null,
+          "revision": "cde8c02799427af0972e32d84129deb094e690b2",
+          "version": "2.3.1"
+        }
+      },
+      {
+        "package": "Schedule",
+        "repositoryURL": "https://github.com/luoxiu/Schedule",
+        "state": {
+          "branch": null,
+          "revision": "e388fcab1d870f32c0359a414fda81b8e81b98c9",
+          "version": "2.1.1"
+        }
+      },
+      {
+        "package": "SQLite.swift",
+        "repositoryURL": "https://github.com/stephencelis/SQLite.swift",
+        "state": {
+          "branch": null,
+          "revision": "5f5ad81ac0d0a0f3e56e39e646e8423c617df523",
+          "version": "0.13.2"
+        }
+      },
+      {
+        "package": "swift-argument-parser",
+        "repositoryURL": "https://github.com/apple/swift-argument-parser",
+        "state": {
+          "branch": null,
+          "revision": "82905286cc3f0fa8adc4674bf49437cab65a8373",
+          "version": "1.1.1"
+        }
+      },
+      {
+        "package": "Request",
+        "repositoryURL": "https://github.com/carson-katri/swift-request",
+        "state": {
+          "branch": null,
+          "revision": "6266d884d7ded618cceb0e0920431be4d6f4c4aa",
+          "version": "1.4.0"
+        }
+      }
+    ]
+  },
+  "version": 1
+}

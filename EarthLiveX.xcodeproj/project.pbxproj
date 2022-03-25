@@ -1,0 +1,722 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		64779BCE27E9D677001ED0F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64779BCD27E9D677001ED0F5 /* Assets.xcassets */; };
+		64779BD127E9D677001ED0F5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64779BD027E9D677001ED0F5 /* Preview Assets.xcassets */; };
+		64779BDC27E9D677001ED0F5 /* EarthLiveXTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64779BDB27E9D677001ED0F5 /* EarthLiveXTests.swift */; };
+		64779BE627E9D677001ED0F5 /* EarthLiveXUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64779BE527E9D677001ED0F5 /* EarthLiveXUITests.swift */; };
+		64779BE827E9D677001ED0F5 /* EarthLiveXUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64779BE727E9D677001ED0F5 /* EarthLiveXUITestsLaunchTests.swift */; };
+		64779C0227EAB3A8001ED0F5 /* EarthLiveX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64779C0127EAB3A8001ED0F5 /* EarthLiveX.swift */; };
+		64779C0427EABAF2001ED0F5 /* StatusBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64779C0327EABAF2001ED0F5 /* StatusBarController.swift */; };
+		64ACB8D427EADEB900AFEB0D /* Wallpaper in Frameworks */ = {isa = PBXBuildFile; productRef = 64ACB8D327EADEB900AFEB0D /* Wallpaper */; };
+		64ACB8D627EAECCE00AFEB0D /* WallPaperTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64ACB8D527EAECCE00AFEB0D /* WallPaperTool.swift */; };
+		64ACB8DE27EB0BBA00AFEB0D /* Json in Frameworks */ = {isa = PBXBuildFile; productRef = 64ACB8DD27EB0BBA00AFEB0D /* Json */; };
+		64ACB8E027EB0BBA00AFEB0D /* Request in Frameworks */ = {isa = PBXBuildFile; productRef = 64ACB8DF27EB0BBA00AFEB0D /* Request */; };
+		64B49E0B27EC2D8F00621772 /* LaunchAtLogin in Frameworks */ = {isa = PBXBuildFile; productRef = 64B49E0A27EC2D8F00621772 /* LaunchAtLogin */; };
+		64B5649527ED8F2900457D31 /* Schedule in Frameworks */ = {isa = PBXBuildFile; productRef = 64B5649427ED8F2900457D31 /* Schedule */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		64779BD827E9D677001ED0F5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 64779BBE27E9D675001ED0F5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 64779BC527E9D675001ED0F5;
+			remoteInfo = EarthLiveX;
+		};
+		64779BE227E9D677001ED0F5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 64779BBE27E9D675001ED0F5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 64779BC527E9D675001ED0F5;
+			remoteInfo = EarthLiveX;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		64779BC627E9D675001ED0F5 /* EarthLiveX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EarthLiveX.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		64779BCD27E9D677001ED0F5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		64779BD027E9D677001ED0F5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		64779BD227E9D677001ED0F5 /* EarthLiveX.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = EarthLiveX.entitlements; sourceTree = "<group>"; };
+		64779BD727E9D677001ED0F5 /* EarthLiveXTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EarthLiveXTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		64779BDB27E9D677001ED0F5 /* EarthLiveXTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarthLiveXTests.swift; sourceTree = "<group>"; };
+		64779BE127E9D677001ED0F5 /* EarthLiveXUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EarthLiveXUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		64779BE527E9D677001ED0F5 /* EarthLiveXUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarthLiveXUITests.swift; sourceTree = "<group>"; };
+		64779BE727E9D677001ED0F5 /* EarthLiveXUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarthLiveXUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		64779BF427E9D77A001ED0F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		64779C0127EAB3A8001ED0F5 /* EarthLiveX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarthLiveX.swift; sourceTree = "<group>"; };
+		64779C0327EABAF2001ED0F5 /* StatusBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusBarController.swift; sourceTree = "<group>"; };
+		64ACB8D527EAECCE00AFEB0D /* WallPaperTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallPaperTool.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		64779BC327E9D675001ED0F5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64ACB8E027EB0BBA00AFEB0D /* Request in Frameworks */,
+				64ACB8D427EADEB900AFEB0D /* Wallpaper in Frameworks */,
+				64B49E0B27EC2D8F00621772 /* LaunchAtLogin in Frameworks */,
+				64ACB8DE27EB0BBA00AFEB0D /* Json in Frameworks */,
+				64B5649527ED8F2900457D31 /* Schedule in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		64779BD427E9D677001ED0F5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		64779BDE27E9D677001ED0F5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		64779BBD27E9D675001ED0F5 = {
+			isa = PBXGroup;
+			children = (
+				64779BC827E9D675001ED0F5 /* EarthLiveX */,
+				64779BDA27E9D677001ED0F5 /* EarthLiveXTests */,
+				64779BE427E9D677001ED0F5 /* EarthLiveXUITests */,
+				64779BC727E9D675001ED0F5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		64779BC727E9D675001ED0F5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				64779BC627E9D675001ED0F5 /* EarthLiveX.app */,
+				64779BD727E9D677001ED0F5 /* EarthLiveXTests.xctest */,
+				64779BE127E9D677001ED0F5 /* EarthLiveXUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		64779BC827E9D675001ED0F5 /* EarthLiveX */ = {
+			isa = PBXGroup;
+			children = (
+				64779C0127EAB3A8001ED0F5 /* EarthLiveX.swift */,
+				64779C0327EABAF2001ED0F5 /* StatusBarController.swift */,
+				64ACB8D527EAECCE00AFEB0D /* WallPaperTool.swift */,
+				64779BF427E9D77A001ED0F5 /* Info.plist */,
+				64779BCD27E9D677001ED0F5 /* Assets.xcassets */,
+				64779BD227E9D677001ED0F5 /* EarthLiveX.entitlements */,
+				64779BCF27E9D677001ED0F5 /* Preview Content */,
+			);
+			path = EarthLiveX;
+			sourceTree = "<group>";
+		};
+		64779BCF27E9D677001ED0F5 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				64779BD027E9D677001ED0F5 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		64779BDA27E9D677001ED0F5 /* EarthLiveXTests */ = {
+			isa = PBXGroup;
+			children = (
+				64779BDB27E9D677001ED0F5 /* EarthLiveXTests.swift */,
+			);
+			path = EarthLiveXTests;
+			sourceTree = "<group>";
+		};
+		64779BE427E9D677001ED0F5 /* EarthLiveXUITests */ = {
+			isa = PBXGroup;
+			children = (
+				64779BE527E9D677001ED0F5 /* EarthLiveXUITests.swift */,
+				64779BE727E9D677001ED0F5 /* EarthLiveXUITestsLaunchTests.swift */,
+			);
+			path = EarthLiveXUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		64779BC527E9D675001ED0F5 /* EarthLiveX */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 64779BEB27E9D677001ED0F5 /* Build configuration list for PBXNativeTarget "EarthLiveX" */;
+			buildPhases = (
+				64779BC227E9D675001ED0F5 /* Sources */,
+				64779BC327E9D675001ED0F5 /* Frameworks */,
+				64779BC427E9D675001ED0F5 /* Resources */,
+				64B49E1127EC7C6800621772 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EarthLiveX;
+			packageProductDependencies = (
+				64ACB8D327EADEB900AFEB0D /* Wallpaper */,
+				64ACB8DD27EB0BBA00AFEB0D /* Json */,
+				64ACB8DF27EB0BBA00AFEB0D /* Request */,
+				64B49E0A27EC2D8F00621772 /* LaunchAtLogin */,
+				64B5649427ED8F2900457D31 /* Schedule */,
+			);
+			productName = EarthLiveX;
+			productReference = 64779BC627E9D675001ED0F5 /* EarthLiveX.app */;
+			productType = "com.apple.product-type.application";
+		};
+		64779BD627E9D677001ED0F5 /* EarthLiveXTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 64779BEE27E9D677001ED0F5 /* Build configuration list for PBXNativeTarget "EarthLiveXTests" */;
+			buildPhases = (
+				64779BD327E9D677001ED0F5 /* Sources */,
+				64779BD427E9D677001ED0F5 /* Frameworks */,
+				64779BD527E9D677001ED0F5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				64779BD927E9D677001ED0F5 /* PBXTargetDependency */,
+			);
+			name = EarthLiveXTests;
+			productName = EarthLiveXTests;
+			productReference = 64779BD727E9D677001ED0F5 /* EarthLiveXTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		64779BE027E9D677001ED0F5 /* EarthLiveXUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 64779BF127E9D677001ED0F5 /* Build configuration list for PBXNativeTarget "EarthLiveXUITests" */;
+			buildPhases = (
+				64779BDD27E9D677001ED0F5 /* Sources */,
+				64779BDE27E9D677001ED0F5 /* Frameworks */,
+				64779BDF27E9D677001ED0F5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				64779BE327E9D677001ED0F5 /* PBXTargetDependency */,
+			);
+			name = EarthLiveXUITests;
+			productName = EarthLiveXUITests;
+			productReference = 64779BE127E9D677001ED0F5 /* EarthLiveXUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		64779BBE27E9D675001ED0F5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					64779BC527E9D675001ED0F5 = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					64779BD627E9D677001ED0F5 = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = 64779BC527E9D675001ED0F5;
+					};
+					64779BE027E9D677001ED0F5 = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = 64779BC527E9D675001ED0F5;
+					};
+				};
+			};
+			buildConfigurationList = 64779BC127E9D675001ED0F5 /* Build configuration list for PBXProject "EarthLiveX" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 64779BBD27E9D675001ED0F5;
+			packageReferences = (
+				64ACB8D227EADEB900AFEB0D /* XCRemoteSwiftPackageReference "macos-wallpaper" */,
+				64ACB8DC27EB0BBA00AFEB0D /* XCRemoteSwiftPackageReference "swift-request" */,
+				64B49E0927EC2D8F00621772 /* XCRemoteSwiftPackageReference "LaunchAtLogin" */,
+				64B5649327ED8F2900457D31 /* XCRemoteSwiftPackageReference "Schedule" */,
+			);
+			productRefGroup = 64779BC727E9D675001ED0F5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				64779BC527E9D675001ED0F5 /* EarthLiveX */,
+				64779BD627E9D677001ED0F5 /* EarthLiveXTests */,
+				64779BE027E9D677001ED0F5 /* EarthLiveXUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		64779BC427E9D675001ED0F5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64779BD127E9D677001ED0F5 /* Preview Assets.xcassets in Resources */,
+				64779BCE27E9D677001ED0F5 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		64779BD527E9D677001ED0F5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		64779BDF27E9D677001ED0F5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		64B49E1127EC7C6800621772 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n${BUILT_PRODUCTS_DIR}/LaunchAtLogin_LaunchAtLogin.bundle/Contents/Resources/copy-helper-swiftpm.sh\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		64779BC227E9D675001ED0F5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64ACB8D627EAECCE00AFEB0D /* WallPaperTool.swift in Sources */,
+				64779C0227EAB3A8001ED0F5 /* EarthLiveX.swift in Sources */,
+				64779C0427EABAF2001ED0F5 /* StatusBarController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		64779BD327E9D677001ED0F5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64779BDC27E9D677001ED0F5 /* EarthLiveXTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		64779BDD27E9D677001ED0F5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64779BE827E9D677001ED0F5 /* EarthLiveXUITestsLaunchTests.swift in Sources */,
+				64779BE627E9D677001ED0F5 /* EarthLiveXUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		64779BD927E9D677001ED0F5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 64779BC527E9D675001ED0F5 /* EarthLiveX */;
+			targetProxy = 64779BD827E9D677001ED0F5 /* PBXContainerItemProxy */;
+		};
+		64779BE327E9D677001ED0F5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 64779BC527E9D675001ED0F5 /* EarthLiveX */;
+			targetProxy = 64779BE227E9D677001ED0F5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		64779BE927E9D677001ED0F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		64779BEA27E9D677001ED0F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		64779BEC27E9D677001ED0F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = EarthLiveX/EarthLiveX.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"EarthLiveX/Preview Content\"";
+				DEVELOPMENT_TEAM = PPC69QRUTZ;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = EarthLiveX/Info.plist;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = cn.lulin.EarthLiveX;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		64779BED27E9D677001ED0F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = EarthLiveX/EarthLiveX.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"EarthLiveX/Preview Content\"";
+				DEVELOPMENT_TEAM = PPC69QRUTZ;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = EarthLiveX/Info.plist;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = cn.lulin.EarthLiveX;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		64779BEF27E9D677001ED0F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PPC69QRUTZ;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = cn.lulin.EarthLiveXTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EarthLiveX.app/Contents/MacOS/EarthLiveX";
+			};
+			name = Debug;
+		};
+		64779BF027E9D677001ED0F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PPC69QRUTZ;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = cn.lulin.EarthLiveXTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EarthLiveX.app/Contents/MacOS/EarthLiveX";
+			};
+			name = Release;
+		};
+		64779BF227E9D677001ED0F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PPC69QRUTZ;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = cn.lulin.EarthLiveXUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = EarthLiveX;
+			};
+			name = Debug;
+		};
+		64779BF327E9D677001ED0F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PPC69QRUTZ;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = cn.lulin.EarthLiveXUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = EarthLiveX;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		64779BC127E9D675001ED0F5 /* Build configuration list for PBXProject "EarthLiveX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				64779BE927E9D677001ED0F5 /* Debug */,
+				64779BEA27E9D677001ED0F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		64779BEB27E9D677001ED0F5 /* Build configuration list for PBXNativeTarget "EarthLiveX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				64779BEC27E9D677001ED0F5 /* Debug */,
+				64779BED27E9D677001ED0F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		64779BEE27E9D677001ED0F5 /* Build configuration list for PBXNativeTarget "EarthLiveXTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				64779BEF27E9D677001ED0F5 /* Debug */,
+				64779BF027E9D677001ED0F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		64779BF127E9D677001ED0F5 /* Build configuration list for PBXNativeTarget "EarthLiveXUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				64779BF227E9D677001ED0F5 /* Debug */,
+				64779BF327E9D677001ED0F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		64ACB8D227EADEB900AFEB0D /* XCRemoteSwiftPackageReference "macos-wallpaper" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sindresorhus/macos-wallpaper";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.3.1;
+			};
+		};
+		64ACB8DC27EB0BBA00AFEB0D /* XCRemoteSwiftPackageReference "swift-request" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/carson-katri/swift-request";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.4.0;
+			};
+		};
+		64B49E0927EC2D8F00621772 /* XCRemoteSwiftPackageReference "LaunchAtLogin" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sindresorhus/LaunchAtLogin";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+		64B5649327ED8F2900457D31 /* XCRemoteSwiftPackageReference "Schedule" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/luoxiu/Schedule";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.1.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		64ACB8D327EADEB900AFEB0D /* Wallpaper */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 64ACB8D227EADEB900AFEB0D /* XCRemoteSwiftPackageReference "macos-wallpaper" */;
+			productName = Wallpaper;
+		};
+		64ACB8DD27EB0BBA00AFEB0D /* Json */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 64ACB8DC27EB0BBA00AFEB0D /* XCRemoteSwiftPackageReference "swift-request" */;
+			productName = Json;
+		};
+		64ACB8DF27EB0BBA00AFEB0D /* Request */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 64ACB8DC27EB0BBA00AFEB0D /* XCRemoteSwiftPackageReference "swift-request" */;
+			productName = Request;
+		};
+		64B49E0A27EC2D8F00621772 /* LaunchAtLogin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 64B49E0927EC2D8F00621772 /* XCRemoteSwiftPackageReference "LaunchAtLogin" */;
+			productName = LaunchAtLogin;
+		};
+		64B5649427ED8F2900457D31 /* Schedule */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 64B5649327ED8F2900457D31 /* XCRemoteSwiftPackageReference "Schedule" */;
+			productName = Schedule;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 64779BBE27E9D675001ED0F5 /* Project object */;
+}
