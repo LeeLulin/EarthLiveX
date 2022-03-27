@@ -43,7 +43,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     var refreshItem: NSMenuItem!
     var quitItem: NSMenuItem!
     
-    var plan: Plan  = Plan.every(1.hour)
+    var plan: Plan = Plan.every(1.hour)
     
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         
@@ -130,7 +130,6 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     @objc func startOnLunch() {
         LaunchAtLogin.isEnabled = !LaunchAtLogin.isEnabled
         statusItem.menu?.item(at: 0)?.state = LaunchAtLogin.isEnabled ? .on : .off
-//        statusItem.menu?.
         print("LaunchAtLogin: \(LaunchAtLogin.isEnabled)")
     }
     

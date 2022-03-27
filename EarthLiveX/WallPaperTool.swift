@@ -9,8 +9,9 @@ import Foundation
 import Request
 import AppKit
 import Wallpaper
+import Schedule
 
-func getLaestImg() -> Void {
+func getLaestImg() {
     
     let latestUrl: String = "https://himawari8-dl.nict.go.jp/himawari8/img/D531106/latest.json"
     var latest: String!
@@ -28,7 +29,7 @@ func getLaestImg() -> Void {
     
 }
 
-func downloadImg(time: String){
+func downloadImg(time: String) {
     // https://himawari8-dl.nict.go.jp/himawari8/img/D531106/2d/550/2022/03/23/070000_0_0.png
     // https://himawari8-dl.nict.go.jp/himawari8/img/D531106/2d/550/2022/03/23/070000_0_1.png
     // https://himawari8-dl.nict.go.jp/himawari8/img/D531106/2d/550/2022/03/23/070000_1_0.png
@@ -56,7 +57,7 @@ func downloadImg(time: String){
     }
 }
 
-func saveImage(data: [Data?], time: String){
+func saveImage(data: [Data?], time: String) {
     let earthImage: NSImage = NSImage(size: NSSize(width: 2500, height: 1400))
     earthImage.lockFocus()
     let imageContext: CGContext? = NSGraphicsContext.current?.cgContext
@@ -82,10 +83,13 @@ func saveImage(data: [Data?], time: String){
     let path = NSSearchPathForDirectoriesInDomains(.picturesDirectory, .userDomainMask, true)[0] + "/earth.png"
     
     let earth: NSData = compressedImageDataWithImg(image: earthImage, rate: 1.0)!
-    let result = FileManager.default.createFile(atPath: path, contents: earth as Data, attributes: nil)
+    let result = earth.write(toFile: path, atomically: true)
+//    let result = FileManager.default.createFile(atPath: path, contents: earth as Data, attributes: nil)
     if result {
         print(path)
-        setWallpaper(path: path)
+        _ = Plan.after(1.seconds).do {
+            setWallpaper(path: path)
+        }
     }
 }
 
