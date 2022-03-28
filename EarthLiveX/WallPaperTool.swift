@@ -119,10 +119,17 @@ func compressedImageDataWithImg(image: NSImage, rate: CGFloat) -> NSData? {
 
 func setWallpaper(path: String){
     let imgUrl = URL(fileURLWithPath: path, isDirectory: false)
+    var options = [NSWorkspace.DesktopImageOptionKey: Any]()
+    options[.imageScaling] = NSImageScaling.scaleProportionallyUpOrDown.rawValue
+    options[.allowClipping] = true
     for screen in NSScreen.screens {
         do {
+            print("refresh wallpaper")
+            try NSWorkspace.shared.setDesktopImageURL(URL(fileURLWithPath: ""), for: screen, options: [:])
+            Thread.sleep(forTimeInterval: 0.4)
             print("set wallpaper to \(screen.localizedName)")
-            try NSWorkspace.shared.setDesktopImageURL(imgUrl, for: screen, options: NSWorkspace.shared.desktopImageOptions(for: NSScreen.main!)!)
+            try NSWorkspace.shared.setDesktopImageURL(imgUrl, for: screen, options: options)
+            Thread.sleep(forTimeInterval: 0.4)
         } catch let error {
             print("set wallpeper error: \(error)")
         }
