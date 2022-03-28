@@ -11,42 +11,6 @@
         }
       },
       {
-        "package": "Wallpaper",
-        "repositoryURL": "https://github.com/sindresorhus/macos-wallpaper",
-        "state": {
-          "branch": null,
-          "revision": "cde8c02799427af0972e32d84129deb094e690b2",
-          "version": "2.3.1"
-        }
-      },
-      {
-        "package": "Schedule",
-        "repositoryURL": "https://github.com/luoxiu/Schedule",
-        "state": {
-          "branch": null,
-          "revision": "e388fcab1d870f32c0359a414fda81b8e81b98c9",
-          "version": "2.1.1"
-        }
-      },
-      {
-        "package": "SQLite.swift",
-        "repositoryURL": "https://github.com/stephencelis/SQLite.swift",
-        "state": {
-          "branch": null,
-          "revision": "5f5ad81ac0d0a0f3e56e39e646e8423c617df523",
-          "version": "0.13.2"
-        }
-      },
-      {
-        "package": "swift-argument-parser",
-        "repositoryURL": "https://github.com/apple/swift-argument-parser",
-        "state": {
-          "branch": null,
-          "revision": "82905286cc3f0fa8adc4674bf49437cab65a8373",
-          "version": "1.1.1"
-        }
-      },
-      {
         "package": "Request",
         "repositoryURL": "https://github.com/carson-katri/swift-request",
         "state": {

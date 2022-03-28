@@ -8,8 +8,6 @@
 import Foundation
 import Request
 import AppKit
-import Wallpaper
-import Schedule
 
 func getLaestImg() {
     
@@ -87,9 +85,8 @@ func saveImage(data: [Data?], time: String) {
 //    let result = FileManager.default.createFile(atPath: path, contents: earth as Data, attributes: nil)
     if result {
         print(path)
-        _ = Plan.after(1.seconds).do {
-            setWallpaper(path: path)
-        }
+        Thread.sleep(forTimeInterval: 2)
+        setWallpaper(path: path)
     }
 }
 
@@ -122,12 +119,13 @@ func compressedImageDataWithImg(image: NSImage, rate: CGFloat) -> NSData? {
 
 func setWallpaper(path: String){
     let imgUrl = URL(fileURLWithPath: path, isDirectory: false)
-    print(imgUrl)
-    do {
-        try Wallpaper.set(imgUrl, screen: .all, scale: .fill)
-    } catch {
-        print("设置失败")
-        try? Wallpaper.set(imgUrl, screen: .all, scale: .fill)
+    for screen in NSScreen.screens {
+        do {
+            print("set wallpaper to \(screen.localizedName)")
+            try NSWorkspace.shared.setDesktopImageURL(imgUrl, for: screen, options: NSWorkspace.shared.desktopImageOptions(for: NSScreen.main!)!)
+        } catch let error {
+            print("set wallpeper error: \(error)")
+        }
     }
     
 }

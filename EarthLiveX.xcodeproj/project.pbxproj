@@ -14,12 +14,10 @@
 		64779BE827E9D677001ED0F5 /* EarthLiveXUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64779BE727E9D677001ED0F5 /* EarthLiveXUITestsLaunchTests.swift */; };
 		64779C0227EAB3A8001ED0F5 /* EarthLiveX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64779C0127EAB3A8001ED0F5 /* EarthLiveX.swift */; };
 		64779C0427EABAF2001ED0F5 /* StatusBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64779C0327EABAF2001ED0F5 /* StatusBarController.swift */; };
-		64ACB8D427EADEB900AFEB0D /* Wallpaper in Frameworks */ = {isa = PBXBuildFile; productRef = 64ACB8D327EADEB900AFEB0D /* Wallpaper */; };
 		64ACB8D627EAECCE00AFEB0D /* WallPaperTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64ACB8D527EAECCE00AFEB0D /* WallPaperTool.swift */; };
 		64ACB8DE27EB0BBA00AFEB0D /* Json in Frameworks */ = {isa = PBXBuildFile; productRef = 64ACB8DD27EB0BBA00AFEB0D /* Json */; };
 		64ACB8E027EB0BBA00AFEB0D /* Request in Frameworks */ = {isa = PBXBuildFile; productRef = 64ACB8DF27EB0BBA00AFEB0D /* Request */; };
 		64B49E0B27EC2D8F00621772 /* LaunchAtLogin in Frameworks */ = {isa = PBXBuildFile; productRef = 64B49E0A27EC2D8F00621772 /* LaunchAtLogin */; };
-		64B5649527ED8F2900457D31 /* Schedule in Frameworks */ = {isa = PBXBuildFile; productRef = 64B5649427ED8F2900457D31 /* Schedule */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,10 +59,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				64ACB8E027EB0BBA00AFEB0D /* Request in Frameworks */,
-				64ACB8D427EADEB900AFEB0D /* Wallpaper in Frameworks */,
 				64B49E0B27EC2D8F00621772 /* LaunchAtLogin in Frameworks */,
 				64ACB8DE27EB0BBA00AFEB0D /* Json in Frameworks */,
-				64B5649527ED8F2900457D31 /* Schedule in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -162,11 +158,9 @@
 			);
 			name = EarthLiveX;
 			packageProductDependencies = (
-				64ACB8D327EADEB900AFEB0D /* Wallpaper */,
 				64ACB8DD27EB0BBA00AFEB0D /* Json */,
 				64ACB8DF27EB0BBA00AFEB0D /* Request */,
 				64B49E0A27EC2D8F00621772 /* LaunchAtLogin */,
-				64B5649427ED8F2900457D31 /* Schedule */,
 			);
 			productName = EarthLiveX;
 			productReference = 64779BC627E9D675001ED0F5 /* EarthLiveX.app */;
@@ -241,10 +235,8 @@
 			);
 			mainGroup = 64779BBD27E9D675001ED0F5;
 			packageReferences = (
-				64ACB8D227EADEB900AFEB0D /* XCRemoteSwiftPackageReference "macos-wallpaper" */,
 				64ACB8DC27EB0BBA00AFEB0D /* XCRemoteSwiftPackageReference "swift-request" */,
 				64B49E0927EC2D8F00621772 /* XCRemoteSwiftPackageReference "LaunchAtLogin" */,
-				64B5649327ED8F2900457D31 /* XCRemoteSwiftPackageReference "Schedule" */,
 			);
 			productRefGroup = 64779BC727E9D675001ED0F5 /* Products */;
 			projectDirPath = "";
@@ -658,14 +650,6 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		64ACB8D227EADEB900AFEB0D /* XCRemoteSwiftPackageReference "macos-wallpaper" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/sindresorhus/macos-wallpaper";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 2.3.1;
-			};
-		};
 		64ACB8DC27EB0BBA00AFEB0D /* XCRemoteSwiftPackageReference "swift-request" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/carson-katri/swift-request";
@@ -682,22 +666,9 @@
 				minimumVersion = 4.0.0;
 			};
 		};
-		64B5649327ED8F2900457D31 /* XCRemoteSwiftPackageReference "Schedule" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/luoxiu/Schedule";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 2.1.1;
-			};
-		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		64ACB8D327EADEB900AFEB0D /* Wallpaper */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 64ACB8D227EADEB900AFEB0D /* XCRemoteSwiftPackageReference "macos-wallpaper" */;
-			productName = Wallpaper;
-		};
 		64ACB8DD27EB0BBA00AFEB0D /* Json */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 64ACB8DC27EB0BBA00AFEB0D /* XCRemoteSwiftPackageReference "swift-request" */;
@@ -712,11 +683,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 64B49E0927EC2D8F00621772 /* XCRemoteSwiftPackageReference "LaunchAtLogin" */;
 			productName = LaunchAtLogin;
-		};
-		64B5649427ED8F2900457D31 /* Schedule */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 64B5649327ED8F2900457D31 /* XCRemoteSwiftPackageReference "Schedule" */;
-			productName = Schedule;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
