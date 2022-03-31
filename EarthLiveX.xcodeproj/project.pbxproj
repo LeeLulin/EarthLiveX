@@ -13,7 +13,6 @@
 		64779BE627E9D677001ED0F5 /* EarthLiveXUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64779BE527E9D677001ED0F5 /* EarthLiveXUITests.swift */; };
 		64779BE827E9D677001ED0F5 /* EarthLiveXUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64779BE727E9D677001ED0F5 /* EarthLiveXUITestsLaunchTests.swift */; };
 		64779C0227EAB3A8001ED0F5 /* EarthLiveX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64779C0127EAB3A8001ED0F5 /* EarthLiveX.swift */; };
-		64779C0427EABAF2001ED0F5 /* StatusBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64779C0327EABAF2001ED0F5 /* StatusBarController.swift */; };
 		64ACB8D627EAECCE00AFEB0D /* WallPaperTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64ACB8D527EAECCE00AFEB0D /* WallPaperTool.swift */; };
 		64ACB8DE27EB0BBA00AFEB0D /* Json in Frameworks */ = {isa = PBXBuildFile; productRef = 64ACB8DD27EB0BBA00AFEB0D /* Json */; };
 		64ACB8E027EB0BBA00AFEB0D /* Request in Frameworks */ = {isa = PBXBuildFile; productRef = 64ACB8DF27EB0BBA00AFEB0D /* Request */; };
@@ -49,7 +48,6 @@
 		64779BE727E9D677001ED0F5 /* EarthLiveXUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarthLiveXUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		64779BF427E9D77A001ED0F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		64779C0127EAB3A8001ED0F5 /* EarthLiveX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarthLiveX.swift; sourceTree = "<group>"; };
-		64779C0327EABAF2001ED0F5 /* StatusBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusBarController.swift; sourceTree = "<group>"; };
 		64ACB8D527EAECCE00AFEB0D /* WallPaperTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallPaperTool.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -105,7 +103,6 @@
 			isa = PBXGroup;
 			children = (
 				64779C0127EAB3A8001ED0F5 /* EarthLiveX.swift */,
-				64779C0327EABAF2001ED0F5 /* StatusBarController.swift */,
 				64ACB8D527EAECCE00AFEB0D /* WallPaperTool.swift */,
 				64779BF427E9D77A001ED0F5 /* Info.plist */,
 				64779BCD27E9D677001ED0F5 /* Assets.xcassets */,
@@ -302,7 +299,6 @@
 			files = (
 				64ACB8D627EAECCE00AFEB0D /* WallPaperTool.swift in Sources */,
 				64779C0227EAB3A8001ED0F5 /* EarthLiveX.swift in Sources */,
-				64779C0427EABAF2001ED0F5 /* StatusBarController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -462,7 +458,7 @@
 				CODE_SIGN_ENTITLEMENTS = EarthLiveX/EarthLiveX.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 102;
+				CURRENT_PROJECT_VERSION = 103;
 				DEVELOPMENT_ASSET_PATHS = "\"EarthLiveX/Preview Content\"";
 				DEVELOPMENT_TEAM = PPC69QRUTZ;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -475,7 +471,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MARKETING_VERSION = 1.0.2;
+				MARKETING_VERSION = 1.0.3;
 				PRODUCT_BUNDLE_IDENTIFIER = cn.lulin.EarthLiveX;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -491,7 +487,7 @@
 				CODE_SIGN_ENTITLEMENTS = EarthLiveX/EarthLiveX.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 102;
+				CURRENT_PROJECT_VERSION = 103;
 				DEVELOPMENT_ASSET_PATHS = "\"EarthLiveX/Preview Content\"";
 				DEVELOPMENT_TEAM = PPC69QRUTZ;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -504,7 +500,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MARKETING_VERSION = 1.0.2;
+				MARKETING_VERSION = 1.0.3;
 				PRODUCT_BUNDLE_IDENTIFIER = cn.lulin.EarthLiveX;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;

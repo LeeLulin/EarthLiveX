@@ -39,6 +39,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     var oneHourItem: NSMenuItem!
     
     var refreshItem: NSMenuItem!
+    var lastUpdateItem: NSMenuItem!
     var quitItem: NSMenuItem!
     
     var timer: Timer!
@@ -60,6 +61,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             oneHourItem.state = .on
 
             refreshItem = NSMenuItem(title: "刷新", action: #selector(refresh), keyEquivalent: "r")
+            lastUpdateItem = NSMenuItem(title: "上次更新: ", action: nil, keyEquivalent: "")
             quitItem = NSMenuItem(title: "退出", action: #selector(quit), keyEquivalent: "q")
 
             intervalSubMenu.addItem(tenMinutesItem)
@@ -72,6 +74,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             statusMenu.addItem(startItem)
             statusMenu.addItem(intervalItem)
             statusMenu.addItem(refreshItem)
+            statusMenu.addItem(lastUpdateItem)
             statusMenu.addItem(.separator())
             statusMenu.addItem(quitItem)
             statusMenu.minimumWidth = 200
@@ -128,6 +131,16 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         }
     }
     
+    func updateLastTime() {
+        let date = Date()
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
+        let time = dateFormatter.string(from: date)
+        print("update time: \(time)")
+        UserDefaults.standard.set(time, forKey: "upatetime")
+        statusItem.menu?.item(at: 3)?.title = "上次更新: \(time)"
+    }
+    
     @objc func startOnLunch() {
         LaunchAtLogin.isEnabled = !LaunchAtLogin.isEnabled
         statusItem.menu?.item(at: 0)?.state = LaunchAtLogin.isEnabled ? .on : .off
@@ -146,6 +159,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     @objc func getWallPaper() {
         print("start get wallper...")
         getLaestImg()
+        updateLastTime()
     }
 
 }

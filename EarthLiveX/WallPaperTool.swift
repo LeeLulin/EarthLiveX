@@ -134,7 +134,6 @@ func setWallpaper(path: String){
             print("set wallpeper error: \(error)")
         }
     }
-    
 }
 
 func resizeImage(sourceImage: NSImage, forSize targetSize: CGSize) -> NSImage {
