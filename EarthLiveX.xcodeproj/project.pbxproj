@@ -48,6 +48,7 @@
 		64779BE727E9D677001ED0F5 /* EarthLiveXUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarthLiveXUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		64779BF427E9D77A001ED0F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		64779C0127EAB3A8001ED0F5 /* EarthLiveX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarthLiveX.swift; sourceTree = "<group>"; };
+		6481A6C0282366D30019CF40 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		64ACB8D527EAECCE00AFEB0D /* WallPaperTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallPaperTool.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -82,6 +83,7 @@
 		64779BBD27E9D675001ED0F5 = {
 			isa = PBXGroup;
 			children = (
+				6481A6C0282366D30019CF40 /* README.md */,
 				64779BC827E9D675001ED0F5 /* EarthLiveX */,
 				64779BDA27E9D677001ED0F5 /* EarthLiveXTests */,
 				64779BE427E9D677001ED0F5 /* EarthLiveXUITests */,
